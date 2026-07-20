@@ -37,7 +37,10 @@ public class InventoryManager : MonoBehaviour
             {
 
                 inventoryItem.amount -= 1;
-
+                if (inventoryItem.amount <= 0)
+                {
+                    playerInventory.Remove(inventoryItem);
+                }
 
                 return;
             }
@@ -48,7 +51,7 @@ public class InventoryManager : MonoBehaviour
         InventoryItem newItem = new InventoryItem();
         newItem.item = item;
         newItem.amount = 1;
-        playerInventory.Remove(newItem);
+
     }
 }
 [System.Serializable]
