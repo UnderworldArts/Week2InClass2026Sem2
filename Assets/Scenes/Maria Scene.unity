@@ -211,6 +211,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2117945255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6500798770713106168, guid: 43e9a0324b41fe94099e027eaf3b6130, type: 3}
+  m_PrefabInstance: {fileID: 8696953034423640582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117945260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117945255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8dbd164beba274c822caccc429b62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JImothy
+  hp: 0
+  hp: 0
 --- !u!1001 &8696953034423640582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -263,10 +282,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3558807556403604420, guid: 43e9a0324b41fe94099e027eaf3b6130, type: 3}
+    - {fileID: 7379459230926649954, guid: 43e9a0324b41fe94099e027eaf3b6130, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6500798770713106168, guid: 43e9a0324b41fe94099e027eaf3b6130, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2117945260}
   m_SourcePrefab: {fileID: 100100000, guid: 43e9a0324b41fe94099e027eaf3b6130, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
