@@ -5,18 +5,55 @@ using static UnityEditor.Progress;
 
 public class InventoryManager : MonoBehaviour
 {
-    public List<Item> playerInventory = new List<Item>();
+    public List<InventoryItem> playerInventory = new List<InventoryItem>();
 
 
 
     public void AddItem(Item item)
     {
-        playerInventory.Add(item);
+
+        foreach (InventoryItem inventoryItem in playerInventory)
+        {
+            if (inventoryItem.item == item)
+            {
+
+                inventoryItem.amount += 1;
+                return;
+            }
+        }
+
+        InventoryItem newItem = new InventoryItem();
+        newItem.item = item;
+        newItem.amount = 1;
+        playerInventory.Add(newItem);
     }
 
 
     public void RemoveItem(Item item)
     {
-        playerInventory.Remove(item);
+        foreach (InventoryItem inventoryItem in playerInventory)
+        {
+            if (inventoryItem.item == item)
+            {
+
+                inventoryItem.amount -= 1;
+
+
+                return;
+            }
+        }
+
+
+
+        InventoryItem newItem = new InventoryItem();
+        newItem.item = item;
+        newItem.amount = 1;
+        playerInventory.Remove(newItem);
     }
+}
+[System.Serializable]
+public class InventoryItem
+{
+    public Item item;
+    public int amount;
 }

@@ -963,7 +963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   playerInventory:
-  - {fileID: 11400000, guid: ee9a5a61cbe16a345bbc7db4520e8af9, type: 2}
+  - item: {fileID: 11400000, guid: ee9a5a61cbe16a345bbc7db4520e8af9, type: 2}
+    amount: 10
 --- !u!4 &2089678321
 Transform:
   m_ObjectHideFlags: 0
